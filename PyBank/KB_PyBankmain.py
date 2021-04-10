@@ -1,14 +1,14 @@
-#Import modules / dependencies
+# Import modules / dependencies
 import os   #os to join elements of file path for PC or Mac
 import csv  #read csv file using .reader method
 
 budget_data = os.path.join("Resources", "budget_data.csv")
-#print(budget_data.csv)
+# print(budget_data.csv)
 
 outputpath = os.path.join("Analysis", "bank_data_analysis.txt")
 
 
-#Initialize variables
+# Initialize variables
 total_months = 0
 total = 0
 net_change = 0
@@ -22,7 +22,7 @@ greatest_increase = ["", 0]
 greatest_decrease = ["", 0]
 list_of_differences = []
 
-#Open and read csv_file called budget_data.csv
+# Open and read csv_file called budget_data.csv
 with open(budget_data) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
 
